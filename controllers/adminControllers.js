@@ -17,7 +17,6 @@ const createEvent = async (req, res, next) => {
     return next(new ApiError(error.message, responseTypes.BAD_REQUEST.code));
   }
 };
-
 //get all events
 const getEvents = async (req, res, next) => {
   try {
